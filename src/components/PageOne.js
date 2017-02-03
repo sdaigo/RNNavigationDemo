@@ -7,11 +7,16 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 class PageOne extends Component {
+  handleOnPress() {
+    Actions.pageTwo({
+      text: 'Hello World!'
+    });
+  }
+
   render() {
-    console.log('hello page one');
     return (
       <View style={{ margin: 128 }}>
-        <Text onPress={Actions.pageTwo}>Page One</Text>
+        <Text onPress={this.handleOnPress}>Page One</Text>
       </View>
     );
   }

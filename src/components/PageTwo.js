@@ -6,15 +6,11 @@ import {
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 
-type Props = {
-
-};
-
 class PageOne extends Component {
   render() {
     return (
       <View style={{ margin: 128 }}>
-        <Text>Page Two</Text>
+        <Text>{this.props.text}</Text>
       </View>
     );
   }
