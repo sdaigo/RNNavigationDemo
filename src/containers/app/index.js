@@ -35,7 +35,6 @@ class AppContainer extends Component {
   }
 
   handleClickCloseButton() {
-    alert('on left');
     Actions.dismiss();
   }
 
